@@ -3,8 +3,8 @@ Exam 1, problem 2.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Matt Hummel.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -41,9 +41,60 @@ def test_factor_sum():
     print('Testing the   factor_sum   function:')
     print('---------------------------------------------------------')
 
+
     ###########################################################################
     # WRITE YOUR TESTS BELOW HERE:
     ###########################################################################
+
+    # Test 1
+    value = 7
+    expected = 1+7
+    actual = factor_sum(value)
+    print('----------------------------')
+    print('Test #1:',value)
+    print('Expected answer: ', expected)
+    print('Actual answer:   ', actual)
+    print('----------------------------')
+
+    # Test 2
+    value = 6
+    expected = 1+2+3+6
+    actual = factor_sum(value)
+    print('----------------------------')
+    print('Test #2:',value)
+    print('Expected answer: ', expected)
+    print('Actual answer:   ', actual)
+    print('----------------------------')
+
+    # Test 3
+    value = 10
+    expected = 1+2+5+10
+    actual = factor_sum(value)
+    print('----------------------------')
+    print('Test #3:',value)
+    print('Expected answer: ', expected)
+    print('Actual answer:   ', actual)
+    print('----------------------------')
+
+    # Test 4
+    value = 12
+    expected = 1+2+3+4+6+12
+    actual = factor_sum(value)
+    print('----------------------------')
+    print('Test #4:',value)
+    print('Expected answer: ', expected)
+    print('Actual answer:   ', actual)
+    print('----------------------------')
+
+    # Test 5
+    value = 20
+    expected = 1+2+4+5+10+20
+    actual = factor_sum(value)
+    print('----------------------------')
+    print('Test #5:',value)
+    print('Expected answer: ', expected)
+    print('Actual answer:   ', actual)
+    print('----------------------------')
 
 
 def factor_sum(n):
@@ -78,3 +129,5 @@ def factor_sum(n):
     ###########################################################################
     # DO NOT modify the above line of code!
     ###########################################################################
+
+main()
