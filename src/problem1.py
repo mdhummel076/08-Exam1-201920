@@ -106,7 +106,7 @@ def problem1(square, thickness, window):
     # -------------------------------------------------------------------------
 
     square.attach_to(window)
-    
+
     center = rg.Point(square.center.x,square.center.y+square.length_of_each_side)
     circle = rg.Circle(center,square.length_of_each_side/2)
     circle.fill_color = square.fill_color
