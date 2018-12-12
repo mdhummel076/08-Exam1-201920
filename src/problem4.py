@@ -75,6 +75,7 @@ def problem4(number_of_stairs, step_size, starting_point, window):
     # -------------------------------------------------------------------------
 
     for k in range(number_of_stairs):
+
         start = rg.Point(starting_point.x+step_size*k,starting_point.y-step_size*k)
         middle = rg.Point(start.x,start.y-step_size)
         end = rg.Point(middle.x+step_size,middle.y)
